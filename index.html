@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script>/* hide slide thumbnails rail */(function(){var d=customElements.define.bind(customElements);customElements.define=function(n,c,o){if(n==='deck-stage'){var cc=c.prototype.connectedCallback;c.prototype.connectedCallback=function(){this.setAttribute('no-rail','');return cc&&cc.apply(this,arguments);};}return d(n,c,o);};})();</script>
+  <script>/* hide slide thumbnails rail */(function(){var d=customElements.define.bind(customElements);customElements.define=function(n,c,o){if(n==='deck-stage'){var cc=c.prototype.connectedCallback;c.prototype.connectedCallback=function(){this.setAttribute('no-rail','');if(!document.title)document.title='АО «РТ-Техприемка»';return cc&&cc.apply(this,arguments);};}return d(n,c,o);};})();</script>
   <title>АО «РТ-Техприемка»</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
